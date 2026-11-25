@@ -7,10 +7,9 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Upload from "./pages/Upload";
-import Pay from "./pages/Pay";
+import Payment from "./pages/Payment";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import './App.css';
 
@@ -71,7 +70,7 @@ function App() {
               </li>
 
               <li className="nav-item">
-                <Link to="/pay" className="btn btn-success px-4">
+                <Link to="/payment" className="btn btn-success px-4">
                   Pay Now
                 </Link>
               </li>
@@ -103,7 +102,7 @@ function App() {
 
           <Route path="/upload" element={<Upload />} />
 
-          <Route path="/pay" element={<Pay />} />
+          <Route path="/payment" element={<Payment />} />
 
         </Routes>
 

@@ -4,6 +4,8 @@ from .models import Product
 import json
 
 
+
+
 @csrf_exempt
 def upload_product(request):
 
@@ -20,3 +22,6 @@ def upload_product(request):
         return JsonResponse({'message': 'Product uploaded successfully!'})
 
     return JsonResponse({'message': 'Invalid request'}, status=400)
+
+
+
