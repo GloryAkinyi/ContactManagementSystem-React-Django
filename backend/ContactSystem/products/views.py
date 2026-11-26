@@ -40,17 +40,6 @@ def get_product(request, pk):
     return Response(serializer.data)
 
 
-@api_view(['GET'])
-def get_product(request, pk):
-
-    try:
-        product = Product.objects.get(pk=pk)
-    except Product.DoesNotExist:
-        return Response({"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND)
-
-    serializer = ProductSerializer(product)
-    return Response(serializer.data)
-
 
 
 
